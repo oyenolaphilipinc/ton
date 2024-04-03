@@ -1,29 +1,18 @@
-import Navbar from "./Navbar"
-import ton from "../assets/ton.jpg"
-import asset from "../assets/asset-man.png"
-import telegram from "../assets/tg.svg"
-import twitter from "../assets/twitter.svg"
+import ton from "../assets/ton.jpg";
 
 const Header = () => {
   return (
-    <div className="bg-[#004aad] font-day">
-        <div className="container mx-auto px-4 pt-8 bg-[#004aad] mb-12">
-        <Navbar />
+    <div className="bg-gradient-to-r from-[#4b2c8d] to-[#304af6] pt-24 font-poppins flex justify-between">
+        <div className="pl-32 pb-32 pt-12">
+            <h1 className="text-7xl font-bold text-white mb-4">$TON 2.0</h1>
+            <p className="text-xl text-gray-400 mb-4">Missed $TON? Here is your<br/> second chance</p>
+            <button className="border-[#304af6] px-4 py-2 bg-yellow-500 rounded-full">Get Invitation</button>
         </div>
-        <div className="flex justify-center gap-2">
-            <img src={ton} width={200} height={10} className="rounded-full hidden md:flex"/>
-            <div className="ml-2">
-            <h1 className="text-6xl text-white mt-16 font-bold md:text-7xl">$ton</h1>
-            <p className="text-white text-2xl">Mek billiones tons of memes</p>
-            </div>
-            <img src={asset} width={200} height={200} className="hidden md:flex" />
-        </div>
-        <div className="mt-16 flex justify-center gap-4 pb-12">
-            <a href="/"><p className="text-white text-xl flex gap-2"><img src={telegram} width={30} height={40} />telegram</p></a>
-            <a href="/"><p className="text-white text-xl flex gap-2"><img src={twitter} width={30} height={40} />twitter</p></a>
+        <div className="mr-4 pb-24">
+            <img src={ton} width={400} height={400} className="rounded-full"/>
         </div>
     </div>
   )
 }
 
-export default Header;
+export default Header

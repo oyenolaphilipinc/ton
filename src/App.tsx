@@ -1,17 +1,17 @@
 import About from './components/About'
-import Details from './components/Details'
-import Footer from './components/Footer'
 import Header from './components/Header'
+import Nav from './components/Nav'
+import Navbar from './components/Navbar'
 import Memes from './components/Memes'
 
 const App = () => {
   return (
     <div>
+      <Nav />
       <Header />
       <About />
-      <Details />
+      <Navbar />
       <Memes />
-      <Footer />
     </div>
   )
 }
