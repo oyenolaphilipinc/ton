@@ -7,10 +7,10 @@ const Footer = () => {
     <div>
         <div className="bg-[rgb(0,74,173)] pt-12 md:flex md:justify-between">
             <div className="ml-3">
-            <img src={ton} width={60} height={60} className="rounded-full mx-auto md:flex" />
+            <img src={ton} width={60} height={60} className="rounded-full mx-auto md:flex mb-4" />
             </div>
-            <div className="flex justify-center gap-4 pb-12 mr-16">
-                <a href="/"><p className="text-white text-xl flex gap-2"><img src={telegram} width={30} height={40} />telegram</p></a>
+            <div className="flex justify-center gap-4 pb-12 mr-16 ml-8">
+                <a href="/"><p className="text-white text-xl flex gap-2 "><img src={telegram} width={30} height={40} />telegram</p></a>
                 <a href="/"><p className="text-white text-xl flex gap-2"><img src={twitter} width={30} height={40} />twitter</p></a>
             </div>
         </div>
